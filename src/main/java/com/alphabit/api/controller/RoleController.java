@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(
-        path = "/roles",
+        path = "/api/v1/roles",
         produces = MediaType.APPLICATION_JSON_VALUE
 )
 //Autowired annotation doesnt needed since injection happening in the constructor
@@ -52,6 +52,13 @@ public class RoleController {
         }
         return roles.save(role);
     }
+    
+    //delete role
+//     @DeleteMapping("/{nic}")
+//     public Role delete(@PathVariable("nic") String nic){
+//         Role role = roles.findByNic(nic);
+//         return roles.delete(Role role);
+//     }
 
     //search roles using specific oql
     @GetMapping("/search")
