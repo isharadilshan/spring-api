@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://${MYSQL_HOST:localhost}:3306/springapi?&serverTimezone=UTC"
+    username: "root"
+    password: ""
+
+  jpa:
+    #hibernate specific way to enable ddl generation
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+    # show generated sql statements in the console (formatted)
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
