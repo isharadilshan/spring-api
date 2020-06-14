@@ -60,7 +60,7 @@ API Doc
     ```
     DELETE /api/v1/roles/96000011112v
     ```
--Retrieve role by the organization and the role type
+- Retrieve role by the organization and the role type
     ```
     GET /api/v1/roles?org=University&roleType=DRIVER
     ```
