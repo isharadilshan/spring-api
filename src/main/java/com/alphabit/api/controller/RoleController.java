@@ -54,11 +54,10 @@ public class RoleController {
     }
     
     //delete role
-//     @DeleteMapping("/{nic}")
-//     public Role delete(@PathVariable("nic") String nic){
-//         Role role = roles.findByNic(nic);
-//         return roles.delete(Role role);
-//     }
+    @DeleteMapping("/{nic}")
+    public void delete(@PathVariable("nic") String nic){
+        roles.deleteById(nic);
+    }
 
     //search roles using specific oql
     @GetMapping("/search")
